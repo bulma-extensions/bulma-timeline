@@ -1,4 +1,19 @@
-/bulma
+# Node
 /node_modules
-/demo
-/src/demo
+npm-debug.log
+yarn-error.log
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Bulma
+/src/sass/bulma

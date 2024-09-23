@@ -1,16 +1,31 @@
-# :exclamation::exclamation::exclamation: Looking for new Maintainer :exclamation::exclamation::exclamation:
-As you may have noticed, this package has not been updated for some time. I'm sorry, but unfortunately I'm not able to continue to maintain it, so I'm looking for someone who would like to take it over and maintain it. If you are interested, please contact me at wikiki@protonmail.com to discuss how to proceed.
+# Bulma Timeline
 
-# bulma-timeline
-Bulma's extension to display a timeline
-(find all my bulma's extensions [here](https://wikiki.github.io/))
+[![NPM Version](https://img.shields.io/npm/v/%40samlam140330%2Fbulma-timeline)](https://www.npmjs.com/package/@samlam140330/bulma-timeline)
+[![NPM Downloads](https://img.shields.io/npm/dy/%40samlam140330%2Fbulma-timeline)](https://www.npmjs.com/package/@samlam140330/bulma-timeline)
 
-[![npm](https://img.shields.io/npm/v/bulma-timeline.svg)](https://www.npmjs.com/package/bulma-timeline)
-[![npm](https://img.shields.io/npm/dm/bulma-timeline.svg)](https://www.npmjs.com/package/bulma-timeline)
-[![Build Status](https://travis-ci.org/Wikiki/bulma-timeline.svg?branch=master)](https://travis-ci.org/Wikiki/bulma-timeline)
+Bulma's extension to display a timeline.  
+This is a fork version of the original repository [Bulma-timeline](https://github.com/Wikiki/bulma-timeline) with some additional features and bug fixes.  
+Since the original repository is not maintained anymore and marked as achived, I decided to fork it and maintain it myself.
 
-<img src="https://i.ibb.co/S0QDCg9/Screenshot-2019-02-10-at-13-21-15.png" width="50%">
+## Installation
 
-Documentation & Demo
----
+```sh
+npm install @samlam140330/bulma-timeline
+```
+
+## License
+
+[![NPM License](https://img.shields.io/npm/l/%40samlam140330%2Fbulma-timeline)](https://www.npmjs.com/package/@samlam140330/bulma-timeline)
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Bulma](https://github.com/jgthms/bulma)
+- [Wikiki](https://github.com/Wikiki/bulma-timeline)
+
+## Documentation & Demo
+
 You can find the Documentation and a demo [here](https://wikiki.github.io/components/timeline/)
+
+<img src="https://i.ibb.co/S0QDCg9/Screenshot-2019-02-10-at-13-21-15.png" alt="Screenshot of the Bulma Timeline component" width="60%">

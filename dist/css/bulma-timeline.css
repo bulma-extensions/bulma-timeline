@@ -1,0 +1,560 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+.timeline .timeline-header {
+  width: 4em;
+  min-width: 4em;
+  max-width: 8em;
+  word-wrap: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.timeline .timeline-item {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  position: relative;
+  margin-left: 2em;
+  padding-bottom: 2em;
+}
+.timeline .timeline-item::before {
+  content: "";
+  background-color: hsl(221, 14%, 86%);
+  display: block;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: -0.5px;
+  top: 0;
+}
+.timeline .timeline-item .timeline-marker {
+  position: absolute;
+  background: hsl(221, 14%, 86%);
+  border: 1px solid hsl(221, 14%, 86%);
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 12px;
+  transform: translateX(-50%);
+  top: 1.2rem;
+  width: 12px;
+}
+.timeline .timeline-item .timeline-marker.is-image {
+  background: hsl(221, 14%, 86%);
+  border: 1px solid hsl(221, 14%, 86%);
+  border-radius: 100%;
+  display: block;
+  overflow: hidden;
+}
+.timeline .timeline-item .timeline-marker.is-image.is-16x16 {
+  height: 16px;
+  width: 16px;
+}
+.timeline .timeline-item .timeline-marker.is-image.is-24x24 {
+  height: 24px;
+  width: 24px;
+}
+.timeline .timeline-item .timeline-marker.is-image.is-32x32 {
+  height: 32px;
+  width: 32px;
+}
+.timeline .timeline-item .timeline-marker.is-image.is-48x48 {
+  height: 48px;
+  width: 48px;
+}
+.timeline .timeline-item .timeline-marker.is-image.is-64x64 {
+  height: 64px;
+  width: 64px;
+}
+.timeline .timeline-item .timeline-marker.is-image.is-96x96 {
+  height: 96px;
+  width: 96px;
+}
+.timeline .timeline-item .timeline-marker.is-image.is-128x128 {
+  height: 128px;
+  width: 128px;
+}
+.timeline .timeline-item .timeline-marker.is-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  background: hsl(221, 14%, 86%);
+  border: 1px solid hsl(221, 14%, 86%);
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+.timeline .timeline-item .timeline-marker.is-icon > * {
+  font-size: 0.75rem !important;
+}
+.timeline .timeline-item .timeline-marker.is-outlined .image {
+  background: hsl(221, 14%, 100%);
+}
+.timeline .timeline-item .timeline-marker.is-outlined.is-icon {
+  background: hsl(221, 14%, 100%);
+}
+.timeline .timeline-item .timeline-marker.is-outlined.is-icon > * {
+  color: hsl(221, 14%, 86%);
+}
+.timeline .timeline-item .timeline-marker.is-white {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-white .image {
+  border-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-white.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-white.is-icon > * {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+.timeline .timeline-item .timeline-marker.is-white.is-outlined {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-white.is-outlined .image {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-white.is-outlined.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-white.is-outlined.is-icon > * {
+  color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-black {
+  background-color: hsl(221, 14%, 4%) !important;
+  border-color: hsl(221, 14%, 4%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-black .image {
+  border-color: hsl(221, 14%, 4%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-black.is-icon {
+  background-color: hsl(221, 14%, 4%) !important;
+  border-color: hsl(221, 14%, 4%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-black.is-icon > * {
+  color: #fff !important;
+}
+.timeline .timeline-item .timeline-marker.is-black.is-outlined {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(221, 14%, 4%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-black.is-outlined .image {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-black.is-outlined.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-black.is-outlined.is-icon > * {
+  color: hsl(221, 14%, 4%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-light {
+  background-color: hsl(221, 14%, 96%) !important;
+  border-color: hsl(221, 14%, 96%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-light .image {
+  border-color: hsl(221, 14%, 96%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-light.is-icon {
+  background-color: hsl(221, 14%, 96%) !important;
+  border-color: hsl(221, 14%, 96%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-light.is-icon > * {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+.timeline .timeline-item .timeline-marker.is-light.is-outlined {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(221, 14%, 96%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-light.is-outlined .image {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-light.is-outlined.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-light.is-outlined.is-icon > * {
+  color: hsl(221, 14%, 96%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-dark {
+  background-color: hsl(221, 14%, 21%) !important;
+  border-color: hsl(221, 14%, 21%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-dark .image {
+  border-color: hsl(221, 14%, 21%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-dark.is-icon {
+  background-color: hsl(221, 14%, 21%) !important;
+  border-color: hsl(221, 14%, 21%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-dark.is-icon > * {
+  color: #fff !important;
+}
+.timeline .timeline-item .timeline-marker.is-dark.is-outlined {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(221, 14%, 21%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-dark.is-outlined .image {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-dark.is-outlined.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-dark.is-outlined.is-icon > * {
+  color: hsl(221, 14%, 21%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-text {
+  background-color: hsl(221, 14%, 29%) !important;
+  border-color: hsl(221, 14%, 29%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-text .image {
+  border-color: hsl(221, 14%, 29%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-text.is-icon {
+  background-color: hsl(221, 14%, 29%) !important;
+  border-color: hsl(221, 14%, 29%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-text.is-icon > * {
+  color: #fff !important;
+}
+.timeline .timeline-item .timeline-marker.is-text.is-outlined {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(221, 14%, 29%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-text.is-outlined .image {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-text.is-outlined.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-text.is-outlined.is-icon > * {
+  color: hsl(221, 14%, 29%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-primary {
+  background-color: hsl(171, 100%, 41%) !important;
+  border-color: hsl(171, 100%, 41%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-primary .image {
+  border-color: hsl(171, 100%, 41%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-primary.is-icon {
+  background-color: hsl(171, 100%, 41%) !important;
+  border-color: hsl(171, 100%, 41%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-primary.is-icon > * {
+  color: #fff !important;
+}
+.timeline .timeline-item .timeline-marker.is-primary.is-outlined {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(171, 100%, 41%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-primary.is-outlined .image {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-primary.is-outlined.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-primary.is-outlined.is-icon > * {
+  color: hsl(171, 100%, 41%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-link {
+  background-color: hsl(233, 100%, 63%) !important;
+  border-color: hsl(233, 100%, 63%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-link .image {
+  border-color: hsl(233, 100%, 63%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-link.is-icon {
+  background-color: hsl(233, 100%, 63%) !important;
+  border-color: hsl(233, 100%, 63%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-link.is-icon > * {
+  color: #fff !important;
+}
+.timeline .timeline-item .timeline-marker.is-link.is-outlined {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(233, 100%, 63%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-link.is-outlined .image {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-link.is-outlined.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-link.is-outlined.is-icon > * {
+  color: hsl(233, 100%, 63%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-info {
+  background-color: hsl(198, 100%, 70%) !important;
+  border-color: hsl(198, 100%, 70%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-info .image {
+  border-color: hsl(198, 100%, 70%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-info.is-icon {
+  background-color: hsl(198, 100%, 70%) !important;
+  border-color: hsl(198, 100%, 70%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-info.is-icon > * {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+.timeline .timeline-item .timeline-marker.is-info.is-outlined {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(198, 100%, 70%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-info.is-outlined .image {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-info.is-outlined.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-info.is-outlined.is-icon > * {
+  color: hsl(198, 100%, 70%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-success {
+  background-color: hsl(153, 53%, 53%) !important;
+  border-color: hsl(153, 53%, 53%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-success .image {
+  border-color: hsl(153, 53%, 53%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-success.is-icon {
+  background-color: hsl(153, 53%, 53%) !important;
+  border-color: hsl(153, 53%, 53%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-success.is-icon > * {
+  color: #fff !important;
+}
+.timeline .timeline-item .timeline-marker.is-success.is-outlined {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(153, 53%, 53%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-success.is-outlined .image {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-success.is-outlined.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-success.is-outlined.is-icon > * {
+  color: hsl(153, 53%, 53%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-warning {
+  background-color: hsl(42, 100%, 53%) !important;
+  border-color: hsl(42, 100%, 53%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-warning .image {
+  border-color: hsl(42, 100%, 53%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-warning.is-icon {
+  background-color: hsl(42, 100%, 53%) !important;
+  border-color: hsl(42, 100%, 53%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-warning.is-icon > * {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+.timeline .timeline-item .timeline-marker.is-warning.is-outlined {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(42, 100%, 53%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-warning.is-outlined .image {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-warning.is-outlined.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-warning.is-outlined.is-icon > * {
+  color: hsl(42, 100%, 53%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-danger {
+  background-color: hsl(348, 100%, 70%) !important;
+  border-color: hsl(348, 100%, 70%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-danger .image {
+  border-color: hsl(348, 100%, 70%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-danger.is-icon {
+  background-color: hsl(348, 100%, 70%) !important;
+  border-color: hsl(348, 100%, 70%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-danger.is-icon > * {
+  color: #fff !important;
+}
+.timeline .timeline-item .timeline-marker.is-danger.is-outlined {
+  background-color: hsl(221, 14%, 100%) !important;
+  border-color: hsl(348, 100%, 70%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-danger.is-outlined .image {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-danger.is-outlined.is-icon {
+  background-color: hsl(221, 14%, 100%) !important;
+}
+.timeline .timeline-item .timeline-marker.is-danger.is-outlined.is-icon > * {
+  color: hsl(348, 100%, 70%) !important;
+}
+.timeline .timeline-item .timeline-content {
+  padding: 1em 0 0 2em;
+}
+.timeline .timeline-item .timeline-content .heading {
+  font-weight: 600;
+}
+.timeline .timeline-item.is-white::before {
+  background-color: hsl(221, 14%, 100%);
+}
+.timeline .timeline-item.is-black::before {
+  background-color: hsl(221, 14%, 4%);
+}
+.timeline .timeline-item.is-light::before {
+  background-color: hsl(221, 14%, 96%);
+}
+.timeline .timeline-item.is-dark::before {
+  background-color: hsl(221, 14%, 21%);
+}
+.timeline .timeline-item.is-text::before {
+  background-color: hsl(221, 14%, 29%);
+}
+.timeline .timeline-item.is-primary::before {
+  background-color: hsl(171, 100%, 41%);
+}
+.timeline .timeline-item.is-link::before {
+  background-color: hsl(233, 100%, 63%);
+}
+.timeline .timeline-item.is-info::before {
+  background-color: hsl(198, 100%, 70%);
+}
+.timeline .timeline-item.is-success::before {
+  background-color: hsl(153, 53%, 53%);
+}
+.timeline .timeline-item.is-warning::before {
+  background-color: hsl(42, 100%, 53%);
+}
+.timeline .timeline-item.is-danger::before {
+  background-color: hsl(348, 100%, 70%);
+}
+.timeline.is-centered .timeline-header {
+  display: flex;
+  width: 100%;
+  align-self: center;
+}
+.timeline.is-centered .timeline-item {
+  width: 50%;
+  align-self: flex-end;
+  flex-direction: row;
+}
+.timeline.is-centered .timeline-item:nth-of-type(2n) {
+  align-self: flex-start;
+  flex-direction: row-reverse;
+  margin-left: 0;
+  margin-right: 2em;
+}
+.timeline.is-centered .timeline-item:nth-of-type(2n)::before {
+  right: -0.5px;
+  left: auto;
+}
+.timeline.is-centered .timeline-item:nth-of-type(2n) .timeline-marker {
+  transform: translateX(50%);
+}
+.timeline.is-centered .timeline-item:nth-of-type(2n) .timeline-content {
+  padding: 1em 2em 0 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-basis: 100%;
+}
+.timeline.is-centered .timeline-item:nth-of-type(2n+1)::before {
+  content: "";
+  background-color: hsl(221, 14%, 86%);
+  display: block;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.timeline.is-centered .timeline-item.is-white::before {
+  background-color: hsl(221, 14%, 100%);
+}
+.timeline.is-centered .timeline-item.is-black::before {
+  background-color: hsl(221, 14%, 4%);
+}
+.timeline.is-centered .timeline-item.is-light::before {
+  background-color: hsl(221, 14%, 96%);
+}
+.timeline.is-centered .timeline-item.is-dark::before {
+  background-color: hsl(221, 14%, 21%);
+}
+.timeline.is-centered .timeline-item.is-text::before {
+  background-color: hsl(221, 14%, 29%);
+}
+.timeline.is-centered .timeline-item.is-primary::before {
+  background-color: hsl(171, 100%, 41%);
+}
+.timeline.is-centered .timeline-item.is-link::before {
+  background-color: hsl(233, 100%, 63%);
+}
+.timeline.is-centered .timeline-item.is-info::before {
+  background-color: hsl(198, 100%, 70%);
+}
+.timeline.is-centered .timeline-item.is-success::before {
+  background-color: hsl(153, 53%, 53%);
+}
+.timeline.is-centered .timeline-item.is-warning::before {
+  background-color: hsl(42, 100%, 53%);
+}
+.timeline.is-centered .timeline-item.is-danger::before {
+  background-color: hsl(348, 100%, 70%);
+}
+.timeline.is-rtl {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.timeline.is-rtl .timeline-item {
+  justify-content: flex-end;
+  flex-direction: row;
+  border-left: none;
+  margin-left: 0;
+  margin-right: 2em;
+}
+.timeline.is-rtl .timeline-item::before {
+  right: 0;
+  left: auto;
+}
+.timeline.is-rtl .timeline-item .timeline-marker {
+  transform: translateX(50%);
+}
+.timeline.is-rtl .timeline-item .timeline-marker.is-image.is-16x16 {
+  transform: translateX(50%);
+}
+.timeline.is-rtl .timeline-item .timeline-marker.is-image.is-24x24 {
+  transform: translateX(50%);
+}
+.timeline.is-rtl .timeline-item .timeline-marker.is-image.is-32x32 {
+  transform: translateX(50%);
+}
+.timeline.is-rtl .timeline-item .timeline-marker.is-image.is-48x48 {
+  transform: translateX(50%);
+}
+.timeline.is-rtl .timeline-item .timeline-marker.is-image.is-64x64 {
+  transform: translateX(50%);
+}
+.timeline.is-rtl .timeline-item .timeline-marker.is-image.is-96x96 {
+  transform: translateX(50%);
+}
+.timeline.is-rtl .timeline-item .timeline-marker.is-image.is-128x128 {
+  transform: translateX(50%);
+}
+.timeline.is-rtl .timeline-item .timeline-content {
+  padding: 1em 2em 0 0;
+  text-align: right;
+}
+.timeline.no-headers .timeline-item.is-first::before {
+  height: calc(100% - 1.2rem);
+  top: 1.2rem;
+}
+.timeline.no-headers .timeline-item.is-last::before {
+  height: 1.2rem;
+}
