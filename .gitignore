@@ -17,3 +17,6 @@ Thumbs.db
 
 # Bulma
 /src/sass/bulma
+
+# My test environment
+*.bat

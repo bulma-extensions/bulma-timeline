@@ -1,7 +1,7 @@
 {
   "name": "@samlam140330/bulma-timeline",
   "version": "1.0.0",
-  "description": "Display a vertical timeline, in different colors, sizes, and states using Bulma framework. This is a fork version of the original repository as it has been marked as an archive.",
+  "description": "Display a vertical timeline, in different colors, sizes, and states using Bulma framework. This is a fork version of the original repository with some additional features and bug fixes as it has been marked as an archive.",
   "homepage": "https://github.com/SamLam140330/bulma-timeline#readme",
   "bugs": {
     "url": "https://github.com/SamLam140330/bulma-timeline/issues"
@@ -19,14 +19,13 @@
     "timeline"
   ],
   "main": "src/sass/index.scss",
-  "sass": "dist/sass/bulma-timeline.scss",
+  "sass": "src/sass/index.scss",
   "style": "dist/css/bulma-timeline.min.css",
   "scripts": {
     "gulp": "gulp",
     "mkdir": "if not exist dist\\sass mkdir dist\\sass",
     "copy": "copy src\\sass\\index.scss dist\\sass\\bulma-timeline.scss",
-    "build": "gulp compileSass && npm run mkdir && npm run copy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp compileSass && npm run mkdir && npm run copy"
   },
   "devDependencies": {
     "bulma": "^1.0.2",
