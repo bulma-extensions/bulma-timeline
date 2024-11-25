@@ -1,6 +1,6 @@
 {
   "name": "@samlam140330/bulma-timeline",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Display a vertical timeline, in different colors, sizes, and states using Bulma framework. This is a fork version with some additional features and bug fixes of the original repository since it has been marked as an archive.",
   "homepage": "https://github.com/SamLam140330/bulma-timeline#readme",
   "bugs": {
