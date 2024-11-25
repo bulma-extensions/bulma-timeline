@@ -13,6 +13,12 @@ Since the original repository is not maintained anymore and marked as achived, I
 npm install @samlam140330/bulma-timeline
 ```
 
+## Usage
+
+```scss
+@use "/node_modules/@samlam140330/bulma-timeline/bulma-timeline.scss";
+```
+
 ## License
 
 [![NPM License](https://img.shields.io/npm/l/%40samlam140330%2Fbulma-timeline)](https://www.npmjs.com/package/@samlam140330/bulma-timeline)
@@ -28,4 +34,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 
 You can find the Documentation and a demo [here](https://wikiki.github.io/components/timeline/)
 
-<img src="https://i.ibb.co/S0QDCg9/Screenshot-2019-02-10-at-13-21-15.png" alt="Screenshot of the Bulma Timeline component" width="60%">
+![Screenshot of the Bulma Timeline component](./timeline-example.png)
