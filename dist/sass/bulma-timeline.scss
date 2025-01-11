@@ -3,6 +3,7 @@
 @use "bulma/sass/utilities/initial-variables.scss" as iv;
 @use "bulma/sass/utilities/derived-variables.scss" as dv;
 @use "bulma/sass/utilities/functions.scss" as fn;
+@use "sass:list";
 
 $timeline-marker-size: 12px !default;
 $timeline-marker-color: iv.$grey-lighter !default;
@@ -112,7 +113,7 @@ $dimensions: 16 24 32 48 64 96 128 !default;
       }
 
       @each $name, $pair in dv.$colors {
-        $color: nth($pair, 1);
+        $color: list.nth($pair, 1);
         $color-invert: fn.bulmaFindColorInvert($color);
 
         &.is-#{$name} {
@@ -161,7 +162,7 @@ $dimensions: 16 24 32 48 64 96 128 !default;
     }
 
     @each $name, $pair in dv.$colors {
-      $color: nth($pair, 1);
+      $color: list.nth($pair, 1);
 
       // $color-invert: nth($pair, 2);
       &.is-#{$name} {
@@ -222,7 +223,7 @@ $dimensions: 16 24 32 48 64 96 128 !default;
       }
 
       @each $name, $pair in dv.$colors {
-        $color: nth($pair, 1);
+        $color: list.nth($pair, 1);
 
         // $color-invert: nth($pair, 2);
         &.is-#{$name} {
