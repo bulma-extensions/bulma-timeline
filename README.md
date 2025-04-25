@@ -10,10 +10,13 @@ If you are interested in bieng part of a group that maintains these compoments, 
 [![NPM Downloads](https://img.shields.io/npm/dy/%40samlam140330%2Fbulma-timeline)](https://www.npmjs.com/package/@samlam140330/bulma-timeline)
 
 Bulma's extension to display a timeline.  
-This is a fork version of the original repository [Bulma-timeline](https://github.com/Wikiki/bulma-timeline) with some additional features and bug fixes.  
-Since the original repository is not maintained anymore and marked as achived, I decided to fork it and maintain it myself.
 
-## Installation
+This is a fork version of the original repository [Bulma-timeline](https://github.com/Wikiki/bulma-timeline) with some additional features and bug fixes
+by SamLam140330 who has published his versoin to NPM under his own org.  The intention is to bring SamLam's changes back to the bulma-extensions
+repository and build from them to revive what used to be the wikiki/bulma-extensions code.  (@SamLam I will invite you to this project when/if we 
+are successfull reviving the npmjs pacakges, and hope for your contributions ... dtbullock).
+
+## Installation (using samlam's package, which works with Bulma 1.0+)
 
 ```sh
 npm install @samlam140330/bulma-timeline
