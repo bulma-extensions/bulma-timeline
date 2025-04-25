@@ -1,3 +1,9 @@
+# :exclamation: Looking for new contributors :exclamation:
+As you may have noticed, this package has not been updated for some time. 
+
+However, as of April 2025 some changes area afoot to recover all the bulma-extensions formerly coded by wikiki, to a useful state.
+If you are interested in bieng part of a group that maintains these compoments, please leave an Issue in the project you're most interested in, to that effect.
+
 # Bulma Timeline
 
 [![NPM Version](https://img.shields.io/npm/v/%40samlam140330%2Fbulma-timeline)](https://www.npmjs.com/package/@samlam140330/bulma-timeline)
@@ -28,10 +34,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 ## Acknowledgments
 
 - [Bulma](https://github.com/jgthms/bulma)
-- [Wikiki](https://github.com/Wikiki/bulma-timeline)
 
 ## Documentation & Demo
 
-You can find the Documentation and a demo [here](https://wikiki.github.io/components/timeline/)
+Currently being rehomed.
 
 ![Screenshot of the Bulma Timeline component](./timeline-example.png)
